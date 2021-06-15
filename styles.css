@@ -25,7 +25,7 @@ h4 {
   text-align: left;
   font-family: calibri;
   color:#2F5496;
-  font-size:20px
+  font-size:20px;
   margin-right:25%;
   margin-left:25%;
 }
@@ -51,6 +51,7 @@ ul {
 a {
   font-family: calibri;
   font-style: italic;
+  font-weight: bold;
   color:#404040;
   font-size:15px;
   text-decoration:none;
