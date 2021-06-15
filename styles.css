@@ -61,3 +61,8 @@ HR {
   margin-right:25%;
   margin-left:25%;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
