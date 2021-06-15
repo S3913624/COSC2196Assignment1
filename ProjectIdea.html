@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<title>3.0.0 Assesment Task 1 - Project Idea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body>
+  <h1>
+    3.0.0 ASSESMENT TASK 1
+  </h1>
+  <h2>
+    My Profile
+  </h2>
+  <h3>
+    Nick Parker
+  </h3>
+  <p>
+    <a href="mailto:S3913624@student.rmit.edu.au">S3913624@student.rmit.edu.au</a><br>
+  <HR>  
+  <h3>
+    Project Idea
+  </h3>
+  <h4>
+    Overview
+  </h4>
+  <p>Broadly speaking, the idea is to create a calculator application with a very specific, set function that applies to metrologists and users of metrology equipment. Specifically, the idea is to create an app available on android or apple devices, that will mathematically convert a temperature sensor signal value (electrical resistance or millivolt depending on the sensor type) to its corresponding temperature value in either degrees Kelvin, Celsius or Fahrenheit, based on the International Temperature Scale of 1990 (ITS-90). Additionally, it will be beneficial to include a function that determines whether the resulting value falls within specified tolerances, as defined in the temperature sensors applicable international standard.
+  </p>
+  <br>
+  <h4>
+    Motive
+  </h4>
+    <p>The mining, oil and gas industry I service is high-risk vs. high-reward. The reason for measuring something in the first place is entirely to make a decision based on the result. If one cannot determine if the measuring equipment is suitable for use, then the result is not credible, and a decision should not be made. 
+    <p>Regrettably, there are very few resources for non-metrologists when it comes to converting a sensor signal and applying that measurement to an accuracy tolerance. It is a demanding field to be exposed to requiring many years of hands-on experience, training and study. It is therefore the intention of this project to help general users of metrological equipment determine the suitability of a measuring device and thus, make an educated decision.
+    </p>
+    <br>
+  <h4>
+    Description
+  </h4>
+    <p>The app can be best described with an example. Consider an instrumentation technician working for Ampol Australia in Queensland, or Chevron Corporation in Western Australia. Their current task is to perform a routine inspection on a temperature sensor that for all intents and purposes, appears to be functioning according to the logic control system the sensor is connected to.
+    <p>The instrument tech knows the process temperature is 0°C and using his standard issue multimeter that all technicians and electricians have, measures 101Ω. The tech types this value into the app, the app converts this measured resistance based on a defined mathematical formula, and displays 3°C. the user inputs the reference temperature of 0°C and the app confirms the temperature sensor is outside allowable tolerances in accordance with the appropriate international standard. The technician is then required by internal policy to take this piece of equipment out of service, and immediately replace with a newly calibrated unit.
+    <p>To simplify:
+      <UL>
+        <li>The user has a temperature sensor that they have measured the electrical signal of. The user would do this using standard, readily available industrial equipment such as a multimeter.</li>
+        <li>The user needs to convert this signal into a meaningful temperature value, perhaps to confirm the sensor is functioning appropriately.</li>
+        <li>The user will type the measured electrical signal into the app, and the app mathematically converts this signal into a meaningful temperature, displaying it proudly on the users screen.</li>
+        <li>If a reference temperature or known temperature is available, the user can input this too, and the app will compare the reference temperature to the sensor measurement. The app will advise the user of the applicable tolerance for that sensor and will advise the user with an on-screen alert if deemed outside the nominated tolerance.</li>
+    </UL>
+    <p>The application will be simple and ideally very intuitive with few options for the user to require any input, but the mathematics is too complex for the average user to simply use an ordinary calculator. As an example, the formula for converting temperature to resistance as defined by the IEC60751 standard is:
+    <p style="text-align:center;">Rt = R0[1+At+Bt^2+C(t-100)t^3]
+    <p>Where:
+      <br>Rt is resistance at the known temperature
+      <br>R0 is resistance at zero degrees Celsius
+      <br>A is a predefined coefficient depending on a sensor type
+      <br>B is a predefined coefficient depending on a sensor type
+      <br>C is a predefined coefficient depending on a sensor type
+      <br>t is the known temperature
+    <p>This formula is not too difficult to comprehend and reasonably easy to calculate, but the aim is not to solve temperature to resistance, but resistance to temperature! we must reverse the equality to isolate t, which results in an equation two pages long and gives us four separate answers. This is not a task even the most seasoned metrologists would consider performing, and therefore justifies the necessity of the app.
+    </p>
+    <br>
+  <h4>
+    Tools, Techniques and Skills
+  </h4>
+    <p>Being a simple calculation app, there will be very few resources required. For prototypical development, a basic computer will be necessary in order to create the app, along with a smartphone to test the app. The development team will initially only need to comprise of a single person who both understands the mathematics and can apply it to already available programs such as Microsoft Excel. This is hardware already available to me, and skills I have already developed. Out of pocket expenses are therefore nil.
+    <p>Given its powerful formula and mathematical features, Microsoft excel will be used to develop the prototype calculation. It will be used to prove the calculation works, isolate the correct single of four possible results of the aforementioned equation, and help to organize the layout and format of the app.
+    <p>The other reason to use Microsoft Excel is because it is completely compatible with OpenAsApp. OpenAsApp is a browser-based app creation tool which turns complicated spreadsheets or databases into apps. OpenAsApp claims to be able to incorporate all the logic, formulas and charts of a spreadsheet automatically and turn it into an intuitive, neat and dynamic app. The app can then be published and shared. OpenAsApp offer to help create a single app and to be able to share with a single person for free, so the financial budget required in this regard is again zero.
+    <p>Upon development of a successful prototype using OpenAsApp, a software engineer will be required to essentially duplicate the OpenAsApp-app into a standalone app that can be published to the android playstore or the apple store. Regrettably, the skills required to do this are currently outside my scope. It is predicted the project will likely stall at this stage as it would require a software engineer who can understand the mathematics. It would be preferential to learn to do this myself.
+    </p>
+    <br>
+  <h4>
+    Outcome
+  </h4>
+    <p>The project is not expected to have a grand impact on the world and is not expected to contain any innovative bit of software or code. It will be grand however in that it will allow the average user of metrological equipment to easily and most importantly understand what they’re using and make an appropriate decision. Although the project seems to be targeted at a relatively niche market, temperature is the most commonly measured physical quantity. Temperature is related to all other physical properties. I.e., the pressure in a vessel changes depending on the temperature. The length of an object changes depending on the temperature. the humidity in a chamber changes depending on the temperature. It’s important to measure correctly. The aim is to help do that, and this project will meet the desired outcome.
+  <br>
+  <p style=text-align:center;>
+    <a href="https://s3913624.github.io/COSC2196Assignment1/index.html">Home</a>&emsp;&emsp;
+    <a href="https://s3913624.github.io/COSC2196Assignment1/PersonalityProfile.html">Previous page</a>
+</body>
+  
+</html>
